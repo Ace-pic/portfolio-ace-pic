@@ -1,0 +1,25 @@
+/* Minimal styles for the counter section (keeps look close to original)
+   Requires: css/flaticon.css and fonts/flaticon/font/* for the icons, and images/bg_2.jpg
+*/
+#section-counter{
+  position:relative;
+  padding: 6rem 0;
+  background-size:cover;
+  background-position:center center;
+  color:#fff;
+}
+#section-counter .overlay{position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.5)}
+#section-counter .block-18{position:relative;z-index:2}
+#section-counter .block-18 .text{padding:30px 20px}
+#section-counter .block-18 .icon{font-size:48px;color:#fac564;margin-bottom:10px}
+#section-counter .number{display:block;font-size:36px;font-weight:700;line-height:1;color:#fff}
+#section-counter .block-18 .text span{display:block;margin-top:6px;color:#d1d1d1}
+/* simple centering helper (keeps same block width feel) */
+.counter-wrap{padding:10px}
+
+/* small responsive tweak */
+@media (max-width:767px){
+  #section-counter{padding:3rem 0}
+  #section-counter .number{font-size:30px}
+  #section-counter .icon{font-size:36px}
+}

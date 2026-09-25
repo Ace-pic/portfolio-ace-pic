@@ -1,0 +1,40 @@
+/*========================================================================== 
+ACE PIC STUDIO - CORRECTIF RESPONSIVE (MOBILE & TABLETTE) 
+Ce bloc s'ajoute à la suite de votre style.css existant sans altérer le desktop. 
+========================================================================== */ 
+
+/* 1. VERROUILLAGE ANTI-DÉBORDEMENT HORIZONTAL */ 
+/*html, body { overflow-x: hidden !important; max-width: 100vw; } 
+img, video, iframe { max-width: 100%; height: auto; }*/
+
+/* 2. NAVBAR & NAVIGATION MOBILE (< 992px) */ 
+
+@media (max-width: 991.98px) 
+{ .navbar { 
+    background: rgba(13, 13, 13, 0.98) !important; 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    padding: 14px 20px !important; 
+} 
+
+.navbar .navbar-collapse { 
+    background: #111111; 
+    padding: 24px; 
+    margin-top: 14px; 
+    border-radius: 12px; 
+    border: 1px solid rgba(255, 255, 255, 0.08);
+     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+     } 
+     
+     .navbar .navbar-nav .nav-link { 
+        padding: 12px 0 !important; 
+        font-size: 15px; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04); 
+    } 
+    
+    .navbar .navbar-nav .nav-link:last-child { 
+        border-bottom: none;
+     } 
+     
+     /* Actions rapides dans le menu déroulant mobile */
+      .mobile-nav-actions { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.1); } } /* 3. HERO SLIDER / CAROUSEL */ @media (max-width: 767.98px) { #header-carousel .carousel-item { min-height: 520px; height: 85vh; } .carousel-caption { padding-top: 80px; padding-left: 15px; padding-right: 15px; } .carousel-caption h1.display-1 { font-size: clamp(2rem, 8vw, 3rem) !important; line-height: 1.15; } .carousel-caption p.fs-5 { font-size: 1rem !important; line-height: 1.5; } .carousel-control-prev, .carousel-control-next { width: 14%; } } /* 4. SUPPRESSION DES DÉBORDEMENTS DÉCORATIFS (TITRES) */ @media (max-width: 991.98px) { /* Élimine les pseudo-éléments width: 500% qui créent le scroll horizontal fantôme */ .title .title-left h5::after, .title .title-center h5::before, .title .title-center h5::after, .title .title-right h5::before { display: none !important; } .title .title-center { margin-top: 24px; text-align: center; } } /* 5. BLOCS SERVICES OVALES (HOMEPAGE) */ @media (max-width: 767.98px) { .service-item.service-item-left, .service-item.service-item-right { border-radius: 24px !important; padding: 24px 16px !important; margin-top: 1.5rem; } .service-item .service-img::before { display: none !important; /* Retire le cercle rigide qui dépasse */ } .service-item .service-img { display: flex; justify-content: center; padding: 1rem 0 !important; } .service-item .service-img img { max-width: 220px; height: auto; } .service-text { text-align: center !important; padding: 10px 0 !important; } } /* 6. BANDEAU DE DÉFILEMENT DE PROJETS */ @media (max-width: 767.98px) { .projects-section::before, .projects-section::after { width: 40px !important; height: 100% !important; } .project-item { width: 160px !important; height: 160px !important; } } /* 7. COMPTEURS ET STATISTIQUES */ @media (max-width: 767.98px) { .ftco-counter { padding: 4em 0 !important; } .ftco-counter .counter-wrap { margin-bottom: 30px !important; } .ftco-counter .text strong.number { font-size: 26px !important; } } /* 8. GRILLES DE GALERIES & BENTO (TABLETTE ET MOBILE) */ @media (max-width: 767.98px) { .photography-gallery { padding: 2rem 0 !important; } .gallery-grid { display: flex !important; flex-direction: column !important; gap: 16px !important; } .gallery-itemx { width: 100% !important; height: 280px !important; } /* Rendre lisible sur écran tactile sans forcer le survol souris */ .gallery-itemx .overlay { opacity: 1 !important; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%) !important; padding: 20px !important; } .gallery-itemx .title { transform: translateY(0) !important; opacity: 1 !important; } .gallery-itemx .title h2 { font-size: 18px !important; } } @media (min-width: 768px) and (max-width: 991.98px) { /* Tablette : grille 2 colonnes équilibrée */ .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; grid-auto-rows: 320px !important; gap: 20px !important; } .g-span-8, .g-span-6, .g-span-4 { grid-column: span 1 !important; } .g-row-2 { grid-row: span 1 !important; } } /* 9. PACKS TARIFAIRES (CARTES) */ @media (max-width: 991.98px) { .cards-section { padding: 80px 16px 60px !important; min-height: auto !important; } .cards { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 70px !important; width: 100% !important; overflow-x: visible !important; padding-top: 30px !important; } .cards .card { width: 100% !important; max-width: 360px !important; margin: 0 auto; } } /* 10. SECTION CREATIVE NETWORK (CARROUSEL TACTILE) */ @media (max-width: 767.98px) { .network-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 12px; } .network-card { flex: 0 0 85% !important; scroll-snap-align: center; } /* Rendre les photos visibles en couleur sur mobile */ .network-card .network-img { filter: grayscale(0%) !important; } } /* 11. FOOTER MOBILE */ @media (max-width: 767.98px) { .footer-with-bg { min-height: auto !important; padding-top: 3rem !important; padding-bottom: 2rem !important; } .footer-widget { padding: 1.2rem !important; margin-bottom: 1rem; } }
