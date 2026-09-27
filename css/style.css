@@ -789,7 +789,7 @@ position: relative;
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -885,6 +885,7 @@ html {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
+***/
 
   /*** page home services ***/
   .h4new {
@@ -893,7 +894,7 @@ html {
     margin-bottom: 15px;
   }
 
-  /***page photography***/
+  --page photography--
   .nav-itemn:hover {
     color: red !important; 
   }
