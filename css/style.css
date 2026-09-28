@@ -786,6 +786,11 @@ position: relative;
 }
 
 
+.ftco-counter .text .number,
+.ftco-counter .text span {
+    color: #e5e2e1;
+}
+
   /*** page home services ***/
   .h4new {
     font-size: 15px;
