@@ -785,6 +785,10 @@ position: relative;
 	}
 }
 
+#section-counter .container {
+    position: relative;
+    z-index: 1;
+}
 
 .ftco-counter .text .number,
 .ftco-counter .text span {
